@@ -47,3 +47,27 @@ test('turns 50 to L', () => {
 test('turns 90 to XC', () => {
     expect(kata.translate(90)).toBe('XC')
 });
+
+test('turns 100 to C', () => {
+    expect(kata.translate(100)).toBe('C')
+});
+
+test('turns 400 to CD', () => {
+    expect(kata.translate(400)).toBe('CD')
+});
+
+test('turns 500 to D', () => {
+    expect(kata.translate(500)).toBe('D')
+});
+
+test('turns 900 to CM', () => {
+    expect(kata.translate(900)).toBe('CM')
+});
+
+test('turns 1000 to M', () => {
+    expect(kata.translate(1000)).toBe('M')
+});
+
+test('turns 2999 to MMCMXCIX', () => {
+    expect(kata.translate(2999)).toBe('MMCMXCIX')
+});
