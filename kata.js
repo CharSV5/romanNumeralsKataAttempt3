@@ -1,5 +1,9 @@
+const numeralChanger = (value, numeral) => {
+    return {value: value, numeral: numeral};
+}
+
 const numerals = [
-    {value: 10, numerals: 'X'}
+    numeralChanger(10, 'X')
 ]
 
 const kata = {
@@ -7,7 +11,7 @@ const kata = {
         let result = ""
         numerals.forEach(function(item) {
             while (num >= item.value) {
-                result += item.numerals;
+                result += item.numeral;
                 num -= item.value;
             }
         })
