@@ -3,7 +3,11 @@ const numeralChanger = (value, numeral) => {
 }
 
 const numerals = [
-    numeralChanger(10, 'X')
+    numeralChanger(10, 'X'),
+    numeralChanger(9, 'IX'),
+    numeralChanger(5, 'V'),
+    numeralChanger(4, 'IV'),
+    numeralChanger(1, 'I'),
 ]
 
 const kata = {
@@ -16,19 +20,7 @@ const kata = {
             }
         })
         
-         if (num >= 9) {
-            result += 'IX'
-            num -= 9
-         } 
-        if (num >= 5) {
-           result += 'V'
-           num -= 5
-        } 
-        if (num >= 4) {
-            result += 'IV'
-            num -= 4
-         } 
-        return result += 'I'.repeat(num)
+        return result 
         
     }
 }
