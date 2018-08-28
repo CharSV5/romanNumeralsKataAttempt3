@@ -1,10 +1,17 @@
+const numerals = [
+    {value: 10, numerals: 'X'}
+]
+
 const kata = {
     translate: (num) => {
         let result = ""
-        while (num >= 10) {
-            result += 'X'
-            num -= 10
-         } 
+        numerals.forEach(function(item) {
+            while (num >= item.value) {
+                result += item.numerals;
+                num -= item.value;
+            }
+        })
+        
          if (num >= 9) {
             result += 'IX'
             num -= 9
