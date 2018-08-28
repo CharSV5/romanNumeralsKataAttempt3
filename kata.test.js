@@ -35,3 +35,15 @@ test('turns 9 to IX', () => {
 test('turns 20 to XX', () => {
     expect(kata.translate(20)).toBe('XX')
 });
+
+test('turns 40 to XL', () => {
+    expect(kata.translate(40)).toBe('XL')
+});
+
+test('turns 50 to L', () => {
+    expect(kata.translate(50)).toBe('L')
+});
+
+test('turns 90 to XC', () => {
+    expect(kata.translate(90)).toBe('XC')
+});
